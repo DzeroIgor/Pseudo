@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.catalogue img {    
+    width: 225px;
+    height: 300px;
+    object-fit: inherit;    
+    border: 1px solid #ececec;
+}
+
+h3 {
+    text-align: center;
+    font-family: Rokkitt;
+     font-style: normal;
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;  
+    font-family: Rokkitt;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    /* border: 1px solid #ffffff; */
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff7300;
+    cursor: pointer;
+    
+}
+.catalogue img:hover {
+    border: 1px solid #ff73004b;
+}
+
+.catalogue {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 1400px;   
+    margin: 0 auto;
+    padding: 20px 10px;
+    place-content: start center;
+} 
+
+.catalogues {
+    background-color: #f8f8f8;
+}
+
