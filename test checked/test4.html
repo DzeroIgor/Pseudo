@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bar {
+           width: 150px; 
+           height: 80px;
+           display: inline-block;
+           text-align: center;
+        }
+        .button {
+            width: 90px;
+            height: 45px;
+            background-color: #fe3c3c;
+            border-radius: 40px;
+            display: inline-block;
+            margin-top: 16px;
+        }
+        .circle {
+            width: 38px;
+            height: 38px;
+            border-radius: 40px;
+            background-color: #fff;
+            float: left;
+            margin: 3.5px;
+        }
+        input:checked + .button>.circle {            
+            float: right;
+            margin: 3.5px;
+        }
+        input:checked + .button {
+            background-color: #00a22b;
+        }
+        input {
+            display: none;
+        }       
+        .cat {
+            margin: 20px 0;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            background-image: url(2.png);
+            background-size: 150px;
+        }
+        input:checked + .cat {
+            background-image: url(1.png);
+        }
+    </style>
+</head>
+<body>
+    <label class="bar">
+        <input type="checkbox">
+        <div class="button">
+            <div class="circle"></div>
+        </div>
+    </label>
+    <br>
+    <label>
+        <input type="checkbox">
+        <div class="cat"></div>
+    </label>
+</body>
+</html>
