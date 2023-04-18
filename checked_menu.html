@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Menu</title>
+    <style>
+        body {
+            background-color: #345;
+        }
+        input {
+            display: none;
+        }
+        .box,.box-one, .box-two, .box-three {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 50px;
+            /* border: 1px dotted #fff; */
+        }
+        .t-line {
+            width: 35px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin-bottom: 13px;
+            transition: .5s;
+        }
+        .m-line {
+            width: 67px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin-bottom: 13px;
+            transition: .5s;
+        }
+        .b-line {
+            width: 50px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 20px;
+            transition: .5s;
+        }
+        
+        input:checked + .box>.t-line {
+            width: 35px;
+            transform: rotate(45deg) translate(4px, 9.5px);
+        }
+        input:checked + .box>.m-line {
+            transform: rotate(-45deg) translate(-6px, -6px);
+        }
+        input:checked + .box>.b-line {
+            width: 35px;
+            transform: rotate(45deg) translate(6px, -20px);
+        }
+        
+        input:checked + .box-one>.t-line {
+            width: 35px;
+            transform: rotate(45deg) translate(20px, 25px);
+        }
+        input:checked + .box-one>.m-line {
+            width: 50px;
+            transform: rotate(90deg) translate(0px, 0px);
+        }
+        input:checked + .box-one>.b-line {
+            width: 35px;
+            transform: rotate(-45deg) translate(20px, 6px);
+        }
+        
+        input:checked + .box-two>.t-line {
+            transform: rotate(45deg) translate(20px, -6px);
+        }
+        input:checked + .box-two>.m-line {
+            width: 50px;
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        input:checked + .box-two>.b-line {
+            transform: rotate(-45deg) translate(20px, 6px);
+            width: 35px;
+        }
+        
+        input:checked + .box-three>.t-line {
+            width: 25px;
+            transform: rotate(90deg) translate(8px, -13px);
+        }
+        input:checked + .box-three>.m-line {
+            width: 50px;
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        input:checked + .box-three>.b-line {
+            width: 25px;
+            transform: rotate(-90deg) translate(8px, 13px);
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="box">
+            <div class="t-line"></div>
+            <div class="m-line"></div>
+            <div class="b-line"></div>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="box-one">
+            <div class="t-line"></div>
+            <div class="m-line"></div>
+            <div class="b-line"></div>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="box-two">
+            <div class="t-line"></div>
+            <div class="m-line"></div>
+            <div class="b-line"></div>
+        </div>
+    </label>
+
+    <label>
+        <input type="checkbox">
+        <div class="box-three">
+            <div class="t-line"></div>
+            <div class="m-line"></div>
+            <div class="b-line"></div>
+        </div>
+    </label>
+</body>
+</html>
